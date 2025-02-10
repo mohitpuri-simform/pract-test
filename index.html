@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALL</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/fonts/Sk-Modernist-Bold.otf" />
+    <link rel="stylesheet" href="./assets/fonts/Sk-Modernist-Mono.otf" />
+    <link rel="stylesheet" href="./assets/fonts/Sk-Modernist-Regular.otf" />
   </head>
   <body>
     <div class="main-container">
@@ -50,7 +53,8 @@
               <span>
                 <img src="assets/message.svg" alt="message svg" />
               </span>
-              <span> Message </span>
+              <span class="schedule"> Message </span>
+              <img src="assets/message-number.svg" alt="" />
             </li>
             <li>
               <span>
@@ -118,6 +122,78 @@
             </button>
           </div>
         </header>
+
+        <!-- main-info-left -->
+
+        <section class="main-info">
+          <div class="main-info-left">
+            <div class="main-info-left__nav">
+              <span class="left-arrow">
+                <img src="assets/left-arrow.svg" alt="" />
+              </span>
+              <div class="main-info-left__nav-links">
+                CaTeam / CaUI / <span>88</span>
+              </div>
+            </div>
+            <!-- left containers -->
+            <div class="main-info-left__containers">
+              <div class="main-info-left__container">
+                <h4>Assignee</h4>
+                <div class="main-info-left__container-content">
+                  <div class="main-info-left__container-content-profile">
+                    <img src="assets/assignee.svg" alt="" />
+                  </div>
+                  <h5>Pearl Ward</h5>
+                  <div class="main-info-left-container-icon">
+                    <img src="assets/down-arrow.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="main-info-left__container">
+                <h4>Report to</h4>
+                <div class="main-info-left__container-content">
+                  <div class="main-info-left__container-content-profile">
+                    <img src="assets/report.svg" alt="" />
+                    <h5>Caleb Ward</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="main-info-left__container">
+                <h4>Watching</h4>
+                <div
+                  class="main-info-left__container-content watching-container"
+                >
+                  <div
+                    class="main-info-left__container-content-profile watching"
+                  >
+                    <img src="assets/watching1.svg" alt="" />
+                    <img src="assets/watching2.svg" alt="" />
+                    <img src="assets/watching3.svg" alt="" />
+                    <div class="plus-9">+9</div>
+                  </div>
+                  <div class="main-info-left-container-icon">Add</div>
+                </div>
+              </div>
+              <div class="main-info-left__container">
+                <h4>Tags</h4>
+                <div>
+                  <div class="main-info-left__container-content-profile">
+                    <div class="main-info-left__tags CoTeam">CoTeam</div>
+                    <div class="main-info-left__tags ui">UI/UX Designer</div>
+                    <div class="main-info-left__tags design">Design</div>
+                    <div class="main-info-left__tags ca-product">
+                      Ca Product
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="mark-as-done" title="mark as done">
+              Mark as Done
+            </button>
+          </div>
+          <div class="main-info-right"></div>
+        </section>
       </main>
     </div>
   </body>

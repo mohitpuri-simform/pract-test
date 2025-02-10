@@ -15,6 +15,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  /* font-family: "Sk-Modernist"; */
 }
 
 li {
@@ -148,6 +150,7 @@ li {
 header {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 32px;
 }
 
 header img {
@@ -202,4 +205,130 @@ header button {
 header button img {
   margin-right: 8px;
   vertical-align: middle;
+}
+
+/* main-info */
+
+.main-info {
+  margin: 32px 0 64px 0;
+}
+
+.main-info-left {
+  height: 808px;
+  width: 334px;
+}
+
+.main-info-left__nav {
+  display: flex;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.main-info-left__nav-links {
+  font-weight: bold;
+}
+.main-info-left__nav-links span {
+  color: var(--primary-grey);
+}
+
+.main-info-left__containers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.main-info-left__container {
+  overflow: hidden;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-right-secondary);
+}
+
+.main-info-left__container-content {
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  padding: 12px 16px;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.main-info-left__container-content h5 {
+  width: 286px;
+}
+
+.main-info-left__container-content-profile img {
+  border-radius: 50%;
+}
+
+.main-info-left__container-content-profile {
+  gap: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.watching-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.watching {
+  gap: 10px;
+}
+
+.watching img {
+  border-radius: 5px;
+}
+
+.plus-9 {
+  border: 1px solid rgb(231, 226, 226);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.CoTeam {
+  background-color: #f5b545;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.design {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.ca-product {
+  color: white;
+  padding: 5px 8px;
+  background-color: #e65220;
+  border-radius: 8px;
+  min-width: 100px;
+}
+
+.ui {
+  color: white;
+  padding: 5px 8px;
+  background-color: #4b9f47;
+  border-radius: 8px;
+  min-width: 100px;
+}
+.main-info-left__tags {
+  font-size: 12px;
+}
+
+.mark-as-done {
+  margin-top: 84px;
+  border: 1px solid rgb(231, 230, 230);
+  color: var(--primary-blue);
+  border-radius: var(--border-radius);
+  padding: 16px 122px;
+  background-color: transparent;
 }
