@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="./assets/fonts/Sk-Modernist-Regular.otf" />
   </head>
   <body>
-    <div class="main-container">
-      <aside class="side-bar">
-        <div class="brand">
-          <span><img src="assets/brand-logo.svg" alt="brand-logo" /> </span>
+    <section
+      class="main-container"
+      aria-label="this is the main section of the page"
+    >
+      <aside class="side-bar" aria-label="side-bar of main page">
+        <a href="#" class="brand">
+          <span
+            ><img
+              src="assets/brand-logo.svg"
+              alt="brand-logo"
+              title="brand logo"
+            />
+          </span>
           <span
             ><svg
               width="72"
@@ -30,64 +39,67 @@
               />
             </svg>
           </span>
-        </div>
+        </a>
         <!-- profile card -->
-        <div class="profile-card">
+        <section class="profile-card" aria-label="profile card of user">
           <div class="profile-img">
             <img src="assets/profile-img.svg" alt="profile img" />
           </div>
-          <p class="profile-name dark-font">Linh Nguyen</p>
-          <p class="profile-job">Owner & Founder</p>
-        </div>
+          <a href="#" class="profile-name dark-font">Linh Nguyen</a>
+          <a href="#" class="profile-job">Owner & Founder</a>
+        </section>
         <!-- side menu -->
 
-        <div class="side-menu">
+        <section
+          class="side-menu"
+          aria-label="side menu to access dashboard messages projects schedule and activity"
+        >
           <ul>
-            <li>
+            <li tabindex="0" aria-labelledby="dashboard">
               <span>
                 <img src="assets/dashboard.svg" alt="dashboard svg" />
               </span>
-              <span> Dashboard </span>
+              <span id="dashboard"> Dashboard </span>
             </li>
-            <li>
+            <li tabindex="0" aria-labelledby="message">
               <span>
                 <img src="assets/message.svg" alt="message svg" />
               </span>
-              <span class="schedule"> Message </span>
-              <img src="assets/message-number.svg" alt="" />
+              <span class="schedule" id="message"> Message </span>
+              <img src="assets/message-number.svg" alt="number of messages" />
             </li>
-            <li>
+            <li tabindex="0" aria-labelledby="project">
               <span>
                 <img src="assets/project.svg" alt="project svg" />
               </span>
-              <span class="dark-font"> Project </span>
+              <span class="dark-font" id="project"> Project </span>
             </li>
-            <li>
+            <li tabindex="0" aria-labelledby="schedule">
               <span>
                 <img src="assets/schedule.svg" alt="schedule svg" />
               </span>
-              <div class="schedule">Schedule</div>
+              <div class="schedule" id="schedule">Schedule</div>
               <span class="schedule-span">
                 <img src="assets/activity-left.svg" alt="activity-left" />
               </span>
             </li>
-            <li>
+            <li tabindex="0" aria-labelledby="activity">
               <span>
                 <img src="assets/activity-right.svg" alt="activity-right svg" />
               </span>
-              <span> Activity </span>
+              <span id="activity"> Activity </span>
             </li>
           </ul>
-        </div>
+        </section>
 
         <!-- my teams -->
-        <div class="my-teams-container">
-          <h3 class="dark-font">My Teams</h3>
+        <section class="my-teams-container" aria-labelledby="team">
+          <h3 class="dark-font" id="team">My Teams</h3>
           <div class="my-teams-container__team-profile">
             <span><img src="assets/Avatar.svg" alt="avatar" /> </span>
             <div class="my-teams-container__team-profile-name">
-              <span class="dark-font">CaDesign</span>
-              <span class="team-profile-name">@cadesign</span>
+              <span class="dark-font"><a href="#">CaDesign</a></span>
+              <span class="team-profile-name"><a href="#">@cadesign</a></span>
             </div>
           </div>
           <!-- button -->
@@ -96,28 +108,28 @@
             <span><img src="assets/plus.svg" alt="plus icon" /> </span>
             <span> Add New Team</span>
           </button>
-        </div>
+        </section>
       </aside>
 
       <!-- right section -->
 
-      <main class="right-section">
-        <header>
+      <main class="right-section" aria-label="right side of main page">
+        <header aria-label="navbar to search and navigate">
           <div class="input-container">
             <img src="assets/search.svg" alt="search icon" />
             <input type="text" placeholder="Search for..." />
           </div>
-          <div class="header-right-menu">
+          <div class="header-right-menu" aria-label="add more tasks">
             <div class="right-menu-icons">
-              <span class="right-menu-icon"
-                ><img src="assets/right-header1.svg" alt=""
-              /></span>
-              <span class="right-menu-icon"
-                ><img src="assets/right-header2.svg" alt=""
-              /></span>
+              <a href="#" class="right-menu-icon"
+                ><img src="assets/right-header1.svg" alt="header-nav1"
+              /></a>
+              <a href="#" class="right-menu-icon"
+                ><img src="assets/right-header2.svg" alt="header-nav2"
+              /></a>
             </div>
             <button title="start-project">
-              <img src="assets/right-plus.svg" alt="" />
+              <img src="assets/right-plus.svg" alt="plus icon" />
               <span>Start Project</span>
             </button>
           </div>
@@ -125,57 +137,83 @@
 
         <!-- main-info-left -->
 
-        <section class="main-info">
-          <div class="main-info-left">
+        <section
+          class="main-info"
+          aria-label="information of the left side of main page"
+        >
+          <section class="main-info-left">
             <div class="main-info-left__nav">
               <span class="left-arrow">
-                <img src="assets/left-arrow.svg" alt="" />
+                <img src="assets/left-arrow.svg" alt="left arrow" />
               </span>
-              <div class="main-info-left__nav-links">
+              <nav
+                class="main-info-left__nav-links"
+                aria-label="navigate to CaTeam CaUI and 88"
+              >
                 CaTeam / CaUI / <span>88</span>
-              </div>
+              </nav>
             </div>
             <!-- left containers -->
-            <div class="main-info-left__containers">
-              <div class="main-info-left__container">
-                <h4>Assignee</h4>
-                <div class="main-info-left__container-content">
+            <div class="main-info-left__containers" aria-labelledby="assignee">
+              <a href="#" class="main-info-left__container">
+                <h4 id="assignee">Assignee</h4>
+                <div tabindex="0" class="main-info-left__container-content">
                   <div class="main-info-left__container-content-profile">
-                    <img src="assets/assignee.svg" alt="" />
+                    <img src="assets/assignee.svg" alt="assignee profile" />
                   </div>
                   <h5>Pearl Ward</h5>
                   <div class="main-info-left-container-icon">
-                    <img src="assets/down-arrow.svg" alt="" />
+                    <img src="assets/down-arrow.svg" alt="down arrow" />
                   </div>
                 </div>
-              </div>
-              <div class="main-info-left__container">
-                <h4>Report to</h4>
-                <div class="main-info-left__container-content">
+              </a>
+              <a
+                href="#"
+                class="main-info-left__container"
+                aria-labelledby="report"
+              >
+                <h4 id="report">Report to</h4>
+                <div tabindex="0" class="main-info-left__container-content">
                   <div class="main-info-left__container-content-profile">
-                    <img src="assets/report.svg" alt="" />
+                    <img src="assets/report.svg" alt="report to profile" />
                     <h5>Caleb Ward</h5>
                   </div>
                 </div>
-              </div>
-              <div class="main-info-left__container">
-                <h4>Watching</h4>
+              </a>
+              <a
+                href="#"
+                class="main-info-left__container"
+                aria-labelledby="watch"
+              >
+                <h4 id="watch">Watching</h4>
                 <div
+                  tabindex="0"
                   class="main-info-left__container-content watching-container"
                 >
                   <div
                     class="main-info-left__container-content-profile watching"
+                    aria-labelledby="add"
                   >
-                    <img src="assets/watching1.svg" alt="" />
-                    <img src="assets/watching2.svg" alt="" />
-                    <img src="assets/watching3.svg" alt="" />
+                    <img src="assets/watching1.svg" alt="profile" />
+                    <img src="assets/watching2.svg" alt="profile" />
+                    <img src="assets/watching3.svg" alt="profile" />
                     <div class="plus-9">+9</div>
                   </div>
-                  <div class="main-info-left-container-icon">Add</div>
+                  <div
+                    tabindex="0"
+                    class="main-info-left-container-icon"
+                    id="add"
+                  >
+                    Add
+                  </div>
                 </div>
-              </div>
-              <div class="main-info-left__container">
-                <h4>Tags</h4>
+              </a>
+              <a
+                href="#"
+                class="main-info-left__container"
+                aria-labelledby="tags"
+              >
+                <h4 id="tags">Tags</h4>
                 <div>
                   <div class="main-info-left__container-content-profile">
                     <div class="main-info-left__tags CoTeam">CoTeam</div>
@@ -186,27 +224,43 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <button class="mark-as-done" title="mark as done">
               Mark as Done
             </button>
-          </div>
+          </section>
           <!-- right container -->
-          <div class="main-info-right">
-            <div class="edited-bar">
+          <section
+            class="main-info-right"
+            aria-label="right side information of task list"
+          >
+            <nav class="edited-bar">
               <div class="edited-bar__date">24 Sat,Apr</div>
               <div class="edited-bar__icons">
-                <img src="assets/write.svg" alt="" />
-                <img src="assets/dots.svg" alt="" />
+                <img
+                  tabindex="0"
+                  title="create"
+                  src="assets/write.svg"
+                  alt="edit"
+                />
+                <img
+                  tabindex="0"
+                  title="more"
+                  src="assets/dots.svg"
+                  alt="more"
+                />
               </div>
-            </div>
+            </nav>
             <!-- info of right container -->
-            <article class="right-info-container">
-              <div class="in-progress">In Progress</div>
+            <article class="right-info-container" aria-labelledby="status">
+              <div class="in-progress" id="status">In Progress</div>
               <div class="right-info-container-details">
-                <div class="right-info-container-details__intro">
-                  <h3>Design Website for ca.design</h3>
+                <div
+                  class="right-info-container-details__intro"
+                  aria-labelledby="design"
+                >
+                  <h3 id="design">Design Website for ca.design</h3>
                   <p>
                     The core of a successful product lies in its design, having
                     a strong visual and interaction foundation is the key to
@@ -217,56 +271,62 @@
                   </p>
                 </div>
                 <!-- attachments -->
-                <div class="right-info-container-details__attachments">
-                  <h4>📌 Attachments</h4>
+                <div
+                  class="right-info-container-details__attachments"
+                  aria-labelledby="attach"
+                >
+                  <h4 id="attach">📌 Attachments</h4>
                   <div class="attachments">
-                    <span class="attachment">
-                      <img src="assets/attach1.svg" alt="" />
-                    </span>
-                    <span class="attachment">
-                      <img src="assets/attach2.svg" alt="" />
-                    </span>
-                    <span class="attachment">
-                      <img src="assets/Item.png" alt="" />
-                    </span>
+                    <a href="#" class="attachment">
+                      <img src="assets/attach1.svg" alt="attachment1" />
+                    </a>
+                    <a href="#" class="attachment">
+                      <img src="assets/attach2.svg" alt="attachment2" />
+                    </a>
+                    <a href="#" class="attachment">
+                      <img src="assets/Item.png" alt="attachment3" />
+                    </a>
                   </div>
                 </div>
                 <!-- checklist -->
-                <div class="right-info-container-details__checklist">
-                  <h4>✔️ Checklist</h4>
+                <div
+                  class="right-info-container-details__checklist"
+                  aria-labelledby="check"
+                >
+                  <h4 id="check">✔️ Checklist</h4>
                   <ul class="checklists">
-                    <li class="checklist">
+                    <li class="checklist" tabindex="0" aria-labelledby="make">
                       <input
                         type="checkbox"
                         checked
                         name="checklist1"
                         id="checklist1"
                       />
-                      <h5 class="strike">Make the userflow</h5>
+                      <h5 class="strike" id="make">Make the userflow</h5>
                     </li>
-                    <li class="checklist">
+                    <li class="checklist" tabindex="0" aria-labelledby="low">
                       <input
                         type="checkbox"
                         name="checklist2"
                         id="checklist2"
                       />
-                      <h5>Make the userflow</h5>
+                      <h5 id="low">Design low fidelity mockup</h5>
                     </li>
-                    <li class="checklist">
+                    <li class="checklist" tabindex="0" aria-labelledby="pro">
                       <input
                         type="checkbox"
                         name="checklist3"
                         id="checklist3"
                       />
-                      <h5>Make the userflow</h5>
+                      <h5 id="pro">Make prototype</h5>
                     </li>
                   </ul>
                 </div>
               </div>
             </article>
-          </div>
+          </section>
         </section>
       </main>
-    </div>
+    </section>
   </body>
 </html>
